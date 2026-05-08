@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Normative AI Dev OS — Governance-first RAG платформа для воспроизводимой, аудируемой и контролируемой AI-поддержки разработки ПО.">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>Normative AI Dev OS — Governance-first RAG платформа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">&#9632;</span>
+        <span class="header__logo-text">Normative<span class="text-accent">AI</span></span>
+      </a>
+      <nav class="header__nav" id="mainNav">
+        <a href="#problem" class="header__link">Проблема</a>
+        <a href="#solution" class="header__link">Решение</a>
+        <a href="#architecture" class="header__link">Архитектура</a>
+        <a href="#architecture-overview" class="header__link">Enterprise Arch</a>
+        <a href="#governance" class="header__link">Governance</a>
+        <a href="#enterprise" class="header__link">Enterprise</a>
+        <a href="#cta" class="header__link header__link--cta">Контакты</a>
+      </nav>
+      <button class="header__burger" id="burgerBtn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__gradient hero__gradient--1"></div>
+        <div class="hero__gradient hero__gradient--2"></div>
+        <div class="hero__gradient hero__gradient--3"></div>
+      </div>
+      <div class="hero__inner container">
+        <div class="hero__tags">
+          <span class="tag">Governance-first RAG</span>
+          <span class="tag">Snapshot Reproducibility</span>
+          <span class="tag">Validator Committee</span>
+          <span class="tag">Trace Graph</span>
+          <span class="tag">Enterprise AI Engineering</span>
+        </div>
+        <h1 class="hero__title">Normative AI Dev OS<br>превращает AI-разработку<br>в управляемую инженерную систему</h1>
+        <p class="hero__subtitle">Governance-first RAG платформа для воспроизводимой, аудируемой и контролируемой AI-поддержки разработки ПО.</p>
+        <div class="hero__actions">
+          <a href="https://t.me/logicGrid0" target="_blank" rel="noopener" class="btn btn--primary">Обсудить проект в Telegram</a>
+          <a href="mailto:s06621848@gmail.com" class="btn btn--secondary">Запросить technical overview</a>
+        </div>
+        <div class="hero__scroll">
+          <span>Узнать больше</span>
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 0v20M1 13l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="problem">
+      <div class="container">
+        <div class="section-label reveal">Проблема</div>
+        <h2 class="section-title reveal">Почему текущий подход к AI-разработке<br>не работает в enterprise</h2>
+        <div class="problem__grid">
+          <div class="problem__card reveal">
+            <div class="problem__icon">&#9888;</div>
+            <h3>Невоспроизводимость результатов</h3>
+            <p>LLM возвращают разные ответы на одинаковые запросы. Невозможно гарантировать, что AI-ассистент сработает одинаково в двух идентичных сценариях.</p>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__icon">&#9888;</div>
+            <h3>Отсутствие аудита</h3>
+            <p>Нет инструментов для отслеживания того, какие данные использовал AI, на каком основании принято решение и кто утверждал результат.</p>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__icon">&#9888;</div>
+            <h3>Риски безопасности кода</h3>
+            <p>AI-генерация кода без контроля приводит к уязвимостям, утечкам чувствительной логики и несоответствию стандартам безопасности.</p>
+          </div>
+          <div class="problem__card reveal">
+            <div class="problem__icon">&#9888;</div>
+            <h3>vendor lock-in</h3>
+            <p>Привязка к одному LLM-провайдеру без возможности переключения модели или использования приватных развёртываний.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="solution">
+      <div class="container">
+        <div class="section-label reveal">Решение</div>
+        <h2 class="section-title reveal">AI как governed engineering system,<br>не как generative service</h2>
+        <div class="solution__content reveal">
+          <p class="solution__lead">Normative AI Dev OS — это платформа, которая встраивает AI-поддержку в инженерный процесс с контролем на каждом этапе: от запроса до коммита.</p>
+          <div class="solution__features">
+            <div class="solution__feature reveal">
+              <span class="solution__check">&#10003;</span>
+              <div>
+                <strong>Каждый ответ воспроизводим</strong>
+                <p>Snapshot-фиксация состояния всех компонентов: модель, промпт, контекст, параметры.</p>
+              </div>
+            </div>
+            <div class="solution__feature reveal">
+              <span class="solution__check">&#10003;</span>
+              <div>
+                <strong>Каждое решение аудируемо</strong>
+                <p>Trace Graph фиксирует полную цепочку: от запроса до применения изменений в коде.</p>
+              </div>
+            </div>
+            <div class="solution__feature reveal">
+              <span class="solution__check">&#10003;</span>
+              <div>
+                <strong>Каждая модель взаимозаменяема</strong>
+                <p>Validator Committee обеспечивает независимую валидацию и унифицированный интерфейс.</p>
+              </div>
+            </div>
+            <div class="solution__feature reveal">
+              <span class="solution__check">&#10003;</span>
+              <div>
+                <strong>Каждая инсталляция изолирована</strong>
+                <p>Multi-tenant sandboxes с гранулярным контролем доступа на уровне знаний и проектов.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture-overview" id="architecture-overview">
+      <div class="container">
+        <div class="section-label reveal">Enterprise Architecture</div>
+        <h2 class="section-title reveal">Governance-Centric Enterprise Architecture</h2>
+        <p class="architecture-overview__subtitle reveal">Snapshot-centric AI engineering architecture with reproducibility, governance, traceability, and controlled execution at the core.</p>
+
+        <div class="architecture-overview__visual reveal">
+          <div class="architecture-overview__glow"></div>
+          <img src="images/normative-ai-dev-os-architecture.png" alt="Normative AI Dev OS Governance-Centric Architecture" class="architecture-overview__img" loading="lazy">
+        </div>
+
+        <div class="architecture-overview__cards">
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Control</span>
+              <span class="architecture-overview__card-tech">Node.js + TS</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Control Plane</h3>
+            <p class="architecture-overview__card-desc">Node.js + TypeScript orchestration layer managing governance, policies, snapshots, and execution flow.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Compute</span>
+              <span class="architecture-overview__card-tech">Python 3.11+</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Compute Plane</h3>
+            <p class="architecture-overview__card-desc">Python runtime responsible for retrieval, validation, evaluation, and AI execution services.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Trace</span>
+              <span class="architecture-overview__card-tech">Append-Only</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Traceability Layer</h3>
+            <p class="architecture-overview__card-desc">Append-only event store and trace graph ensuring auditability and reproducibility.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Policy</span>
+              <span class="architecture-overview__card-tech">Declarative</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Governance Layer</h3>
+            <p class="architecture-overview__card-desc">Policy-driven validation and lifecycle governance for enterprise-grade AI engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture" id="architecture">
+      <div class="container">
+        <div class="section-label reveal">Архитектура</div>
+        <h2 class="section-title reveal">Двухплоскостная архитектура<br>с разделением control и compute</h2>
+        <p class="architecture__desc reveal">Control Plane (Node.js LTS, TypeScript) управляет политиками, маршрутизацией, аудитом и жизненным циклом знаний. Compute Plane (Python 3.11+) исполняет модели, векторные вычисления и валидацию. Снапшоты фиксируют состояние каждой операции.</p>
+        <div class="architecture__visual reveal">
+          <img src="images/normative-ai-dev-os-architecture.png" alt="Normative AI Dev OS Architecture Diagram" class="architecture__img" loading="lazy">
+        </div>
+        <div class="architecture__pillars">
+          <div class="pillar reveal">
+            <span class="pillar__num">01</span>
+            <h4>Snapshot-centric Reproducibility</h4>
+            <p>Полная воспроизводимость каждого AI-взаимодействия через снапшоты состояния.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">02</span>
+            <h4>Hybrid Retrieval</h4>
+            <p>Векторный + графовый + keyword поиск с ранжированием по релевантности.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">03</span>
+            <h4>Validator Committee</h4>
+            <p>Множественные валидаторы для кросс-проверки результатов разных моделей.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">04</span>
+            <h4>Trace Graph</h4>
+            <p>Поведенческий граф всех взаимодействий с append-only event store.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">05</span>
+            <h4>Knowledge Lifecycle Governance</h4>
+            <p>Управление версиями знаний, утверждение публикаций, автоматическое устаревание.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">06</span>
+            <h4>Continuous Evaluation</h4>
+            <p>Автоматическое тестирование quality gates при каждом обновлении знаний или модели.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">07</span>
+            <h4>Multi-tenant Isolation</h4>
+            <p>Полная изоляция проектов, знаний и контекстов на уровне инфраструктуры.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="pillar__num">08</span>
+            <h4>Control &amp; Compute Planes</h4>
+            <p>Node.js/TS control plane + Python 3.11+ compute plane с асинхронной коммуникацией.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="governance" id="governance">
+      <div class="container">
+        <div class="section-label reveal">Governance Core</div>
+        <h2 class="section-title reveal">Каждое AI-взаимодействие<br>под контролем</h2>
+        <div class="governance__grid">
+          <div class="governance__card reveal">
+            <h3>Append-Only Event Store</h3>
+            <p>Неизменяемая хронология всех событий: запросы, ответы, валидации, коммиты. Immutable audit trail для compliance и расследований.</p>
+          </div>
+          <div class="governance__card reveal">
+            <h3>Policy Engine</h3>
+            <p>Декларативные политики, определяющие какие модели, данные и паттерны разрешены в каждом контексте. Интеграция с существующими compliance-фреймворками.</p>
+          </div>
+          <div class="governance__card reveal">
+            <h3>Knowledge Lifecycle</h3>
+            <p>Полный цикл управления корпусом знаний: ingestion, верификация, версионирование, деприкация, архивация. Каждый фрагмент знаний имеет метаданные происхождения.</p>
+          </div>
+          <div class="governance__card reveal">
+            <h3>Quality Gates</h3>
+            <p>Автоматическая проверка каждого AI-сгенерированного результата перед передачей разработчику. Метрики точности, безопасности, стиля и соответствия стандартам.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enterprise" id="enterprise">
+      <div class="container">
+        <div class="section-label reveal">Enterprise Readiness</div>
+        <h2 class="section-title reveal">Готова к внедрению<br>в корпоративную инфраструктуру</h2>
+        <div class="enterprise__grid">
+          <div class="enterprise__item reveal">
+            <h4>Self-hosted deployment</h4>
+            <p>Полный контроль над данными. Развёртывание в приватном облаке или on-premises.</p>
+          </div>
+          <div class="enterprise__item reveal">
+            <h4>SSO / SAML / OIDC</h4>
+            <p>Интеграция с корпоративными identity-провайдерами и RBAC.</p>
+          </div>
+          <div class="enterprise__item reveal">
+            <h4>Audit Logs &amp; Compliance</h4>
+            <p>Append-only логи с экспортом в SIEM-системы и поддержкой SOC 2, GDPR.</p>
+          </div>
+          <div class="enterprise__item reveal">
+            <h4>Model Agnostic</h4>
+            <p>Поддержка OpenAI, Anthropic, open-source моделей и приватных развёртываний.</p>
+          </div>
+          <div class="enterprise__item reveal">
+            <h4>API-first Design</h4>
+            <p>Программируемый доступ ко всем функциям платформы через REST и gRPC.</p>
+          </div>
+          <div class="enterprise__item reveal">
+            <h4>Horizontal Scaling</h4>
+            <p>Шардирование по tenants, параллельная валидация, распределённый trace storage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blocks" id="blocks">
+      <div class="container">
+        <div class="section-label reveal">Tech Stack</div>
+        <h2 class="section-title reveal">Две плоскости, одна платформа</h2>
+        <div class="blocks__wrapper">
+          <div class="blocks__plane blocks__plane--control reveal">
+            <div class="blocks__plane-header">
+              <span class="blocks__badge">Control Plane</span>
+              <span class="blocks__tech">Node.js LTS + TypeScript</span>
+            </div>
+            <ul class="blocks__list">
+              <li>Policy enforcement &amp; routing</li>
+              <li>Trace Graph orchestration</li>
+              <li>Knowledge lifecycle management</li>
+              <li>Snapshot coordination</li>
+              <li>Tenant isolation &amp; auth</li>
+              <li>REST/gRPC API gateway</li>
+            </ul>
+          </div>
+          <div class="blocks__divider reveal">
+            <span>Async Message Bus</span>
+          </div>
+          <div class="blocks__plane blocks__plane--compute reveal">
+            <div class="blocks__plane-header">
+              <span class="blocks__badge">Compute Plane</span>
+              <span class="blocks__tech">Python 3.11+</span>
+            </div>
+            <ul class="blocks__list">
+              <li>LLM inference orchestration</li>
+              <li>Vector store &amp; hybrid retrieval</li>
+              <li>Validator Committee execution</li>
+              <li>Continuous evaluation runners</li>
+              <li>Knowledge embedding pipeline</li>
+              <li>Quality gate computation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container">
+        <div class="cta__card reveal">
+          <div class="cta__glow"></div>
+          <h2 class="cta__title">Готовы построить governed AI-разработку?</h2>
+          <p class="cta__text">Обсудим архитектуру, требования к безопасности, сценарии внедрения и дорожную карту.</p>
+          <div class="cta__actions">
+            <a href="https://t.me/logicGrid0" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Обсудить проект в Telegram</a>
+            <a href="mailto:s06621848@gmail.com" class="btn btn--secondary btn--lg">Запросить technical overview</a>
+          </div>
+          <p class="cta__email" id="ctaEmail">
+            <span class="cta__email-label">или напишите:</span>
+            <span class="cta__email-addr">s06621848@gmail.com</span>
+            <button class="cta__copy" id="copyEmailBtn" aria-label="Копировать email">&#128203;</button>
+            <span class="cta__copied" id="copiedHint">Скопировано</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Normative<span class="text-accent">AI</span></span>
+        <p class="footer__tagline">Governance-first RAG платформа для controlled AI software engineering.</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://t.me/logicGrid0" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:s06621848@gmail.com">Email</a>
+        <a href="#hero">Наверх</a>
+      </div>
+      <div class="footer__copy">
+        &copy; 2026 Normative AI Dev OS. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
