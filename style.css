@@ -554,6 +554,144 @@ section {
   line-height: 1.6;
 }
 
+/* ---------- Architecture Overview ---------- */
+.architecture-overview {
+  background: linear-gradient(180deg, #0a0a0f 0%, #0d0d1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.architecture-overview__subtitle {
+  max-width: 680px;
+  font-size: 1.05rem;
+  color: #92929d;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.architecture-overview__visual {
+  position: relative;
+  margin-bottom: 64px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(108, 92, 231, 0.12);
+  background: rgba(255, 255, 255, 0.01);
+  padding: 12px;
+  isolation: isolate;
+}
+
+.architecture-overview__glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(108, 92, 231, 0.06) 0%, rgba(0, 206, 201, 0.03) 50%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+}
+
+.architecture-overview__img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.architecture-overview__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.architecture-overview__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(108, 92, 231, 0.08);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+.architecture-overview__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.03), rgba(0, 206, 201, 0.02));
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.architecture-overview__card:hover::before {
+  opacity: 1;
+}
+
+.architecture-overview__card:hover {
+  border-color: rgba(108, 92, 231, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 0 24px rgba(108, 92, 231, 0.06);
+}
+
+.architecture-overview__card-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #6c5ce7, #00cec9, transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.architecture-overview__card:hover .architecture-overview__card-accent {
+  opacity: 1;
+}
+
+.architecture-overview__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.architecture-overview__card-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background: rgba(108, 92, 231, 0.1);
+  color: #a29bfe;
+}
+
+.architecture-overview__card-tech {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  color: #555;
+}
+
+.architecture-overview__card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #e4e4ed;
+}
+
+.architecture-overview__card-desc {
+  font-size: 0.85rem;
+  color: #777;
+  line-height: 1.65;
+}
+
 /* ---------- Governance ---------- */
 .governance {
   background: #0a0a0f;
@@ -985,6 +1123,19 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .architecture-overview__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-overview__visual {
+    padding: 8px;
+    margin-bottom: 40px;
+  }
+
+  .architecture-overview__card {
+    padding: 24px 20px;
+  }
+
   .governance__grid {
     grid-template-columns: 1fr;
   }
@@ -1022,7 +1173,7 @@ section {
     padding: 100px 0 60px;
   }
 
-  .problem__card, .governance__card, .pillar {
+  .problem__card, .governance__card, .pillar, .architecture-overview__card {
     padding: 24px 20px;
   }
 

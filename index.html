@@ -23,6 +23,7 @@
         <a href="#problem" class="header__link">Проблема</a>
         <a href="#solution" class="header__link">Решение</a>
         <a href="#architecture" class="header__link">Архитектура</a>
+        <a href="#architecture-overview" class="header__link">Enterprise Arch</a>
         <a href="#governance" class="header__link">Governance</a>
         <a href="#enterprise" class="header__link">Enterprise</a>
         <a href="#cta" class="header__link header__link--cta">Контакты</a>
@@ -125,6 +126,61 @@
                 <p>Multi-tenant sandboxes с гранулярным контролем доступа на уровне знаний и проектов.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="architecture-overview" id="architecture-overview">
+      <div class="container">
+        <div class="section-label reveal">Enterprise Architecture</div>
+        <h2 class="section-title reveal">Governance-Centric Enterprise Architecture</h2>
+        <p class="architecture-overview__subtitle reveal">Snapshot-centric AI engineering architecture with reproducibility, governance, traceability, and controlled execution at the core.</p>
+
+        <div class="architecture-overview__visual reveal">
+          <div class="architecture-overview__glow"></div>
+          <img src="public/images/normative-ai-dev-os-architecture.png" alt="Normative AI Dev OS Governance-Centric Architecture" class="architecture-overview__img" loading="lazy">
+        </div>
+
+        <div class="architecture-overview__cards">
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Control</span>
+              <span class="architecture-overview__card-tech">Node.js + TS</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Control Plane</h3>
+            <p class="architecture-overview__card-desc">Node.js + TypeScript orchestration layer managing governance, policies, snapshots, and execution flow.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Compute</span>
+              <span class="architecture-overview__card-tech">Python 3.11+</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Compute Plane</h3>
+            <p class="architecture-overview__card-desc">Python runtime responsible for retrieval, validation, evaluation, and AI execution services.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Trace</span>
+              <span class="architecture-overview__card-tech">Append-Only</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Traceability Layer</h3>
+            <p class="architecture-overview__card-desc">Append-only event store and trace graph ensuring auditability and reproducibility.</p>
+          </div>
+
+          <div class="architecture-overview__card reveal">
+            <div class="architecture-overview__card-accent"></div>
+            <div class="architecture-overview__card-header">
+              <span class="architecture-overview__card-badge">Policy</span>
+              <span class="architecture-overview__card-tech">Declarative</span>
+            </div>
+            <h3 class="architecture-overview__card-title">Governance Layer</h3>
+            <p class="architecture-overview__card-desc">Policy-driven validation and lifecycle governance for enterprise-grade AI engineering.</p>
           </div>
         </div>
       </div>
